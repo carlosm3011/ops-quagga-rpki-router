@@ -117,7 +117,7 @@ Vagrant.configure(2) do |config|
     #
     echo "%%% Copying configuration files"
     mkdir -p /usr/local/etc/quagga/
-    mkdir -p /var/run/quagga
+    mkdir -p /var/run/quagga/
     cp -v /home/shared/config/vtysh.conf /usr/local/etc/quagga/
     cp -v /home/shared/config/bgpd.conf /usr/local/etc/quagga/
   SHELL
