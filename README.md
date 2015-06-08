@@ -17,7 +17,9 @@ Installing and running should be as easy as:
 	bgpd -d &
 ```
 3. Check it's working correctly
+   The bgpd daemon will take a few seconds to properly start up and connect to the RPKI Cache.  After it has sucessfully booted, try the following commands:
 ```
+	vtysh
 	show rpki prefix-table
 	show rpki cache-connection
 ```
